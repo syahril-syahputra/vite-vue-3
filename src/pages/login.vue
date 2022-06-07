@@ -15,7 +15,6 @@
         <label class="text-s m">Belum punya akun? </label>
         <ButtonLabel title="Daftar Sekarang" />
       </div>
-      <a>{{a}}</a>
     </div>
   </div>
 </template>
@@ -26,8 +25,8 @@ import ButtonLabel from "../components/ButtonLabel.vue";
 import { useFetch } from '@vueuse/core'
 import { ref } from "vue";
 
-const email = ref("");
-const password = ref("");
+const email = ref("eka@gmail.com");
+const password = ref("password");
 let a : any = ref("aaa")
 const login = async () => {
   // if(email.value.length < 1)
@@ -40,13 +39,18 @@ const login = async () => {
   // }
   
   // console.log('start')
-  
-  const { data } = await useFetch(url, { timeout: 1000 }).post({
+  const url = "http://api.lucy.test/login";
+  const { data, statusCode } = await useFetch(url, { timeout: 5000 }).post({
     email: email.value,
     password: password.value
   }).json();
   
-  console.log(data.value)
+  if(statusCode.value === 200)
+  {
+    alert("login sukses")
+    return
+  }
+  alert("Gagal Login")
 
 
 
