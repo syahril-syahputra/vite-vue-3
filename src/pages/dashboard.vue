@@ -1,4 +1,3 @@
 <template>
-  <router-view />
-  
+<div>Dashboard</div>
 </template>
