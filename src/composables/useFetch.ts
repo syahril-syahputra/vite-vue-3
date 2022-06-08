@@ -6,11 +6,11 @@ import useBaseUrl from "./useBaseUrl";
  * @param option parameter
  * @method fetchData() untuk perintah eksekusi.
  * @returns hasil dari data yang di dapat
- * @copyright 2022, Lucy
+ * @copyright 2022, Syahril Syahputra
  */
 export default function (url: string, option: object) {
   const state = reactive({
-    response: {},
+    response: [],
     error: {
       status: false,
       message: "",

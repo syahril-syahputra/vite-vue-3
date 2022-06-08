@@ -2,6 +2,7 @@ import {createRouter, createWebHistory} from 'vue-router';
 import dashboardVue from '../pages/dashboard.vue';
 import search from '../pages/search.vue';
 import registrationVue from '../pages/registration.vue';
+import swatcherVue from '../pages/swatcher.vue';
 
 
 const routes = [
@@ -12,8 +13,13 @@ const routes = [
     },
     {
         path: '/search',
-        name: 'dashboard',
+        name: 'finding',
         component : search
+    },
+    {
+        path: '/swatcher',
+        name: 'swatcher',
+        component : swatcherVue
     }
 ]
 const router = createRouter({

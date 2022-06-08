@@ -1,3 +1,3 @@
-const useBaseUrl : string = "https://techtest.folkatech.com/api"
+const useBaseUrl : string = "https://itunes.apple.com"
 
 export default useBaseUrl;

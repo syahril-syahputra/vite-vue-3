@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       boxShadow: {
-        'login': '0 0px 10px 0px rgba(0, 0, 0, 0.3)',
+        'card': '0 5px 10px 0px rgba(0, 0, 0, 0.1)',
         'button': '0px 5px 5px 0px rgba(0, 0, 0, 0.3)',
       },
       colors: {

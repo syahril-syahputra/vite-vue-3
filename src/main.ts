@@ -1,9 +1,9 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import {createPinia} from 'pinia'
 import router from './router'
 import './index.css'
 import './assets/css/tansition.css'
 import FontAwesome from './utils/fontawesome'
+import {createPinia} from 'pinia'
 
-createApp(App).component("FontAwesomeIcon", FontAwesome).use(createPinia).use(router).mount('#app')
+createApp(App).use(createPinia()).component("FontAwesomeIcon", FontAwesome).use(router).mount('#app')
