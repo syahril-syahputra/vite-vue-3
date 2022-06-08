@@ -3,7 +3,7 @@
     :value="props.modelValue"
     v-model="data"
     :placeholder="props.placeholder"
-    class="border shadow-sm rounded-md border-gray-200 px-3 py-2 outline-none"
+    class="border text-center rounded-full text-gray-600 font-sans shadow-sm border-gray-200 px-3 py-3 outline-none"
     :type="isPassword ? 'password' : 'text'"
   />
 </template>
