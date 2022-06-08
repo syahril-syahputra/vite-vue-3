@@ -1,0 +1,32 @@
+.slide-enter-active,
+.slide-leave-active {
+  transition: all 0.6s ease-out;
+  max-height: 300px;
+}
+.slide-leave-to,
+.slide-enter/* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+  max-height: 0px;
+}
+
+.slide-page-enter-active,
+.slide-page-leave-active {
+  transition: transform 0.6;
+}
+.slide-page-leave-to {
+  transform: translateX(100vw);
+}
+.slide-page-enter/* .fade-leave-active below version 2.1.8 */ {
+  transform: translateX(100vw);
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
